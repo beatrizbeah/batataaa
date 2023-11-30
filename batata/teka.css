@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --bg-color:var(--bg-color) #9781B7;
+    --text-color:#fff;
+    --main-color:#BFB2D3;
+    --other-color:#fcfcfc;
+    --h1-font:4rem;
+    --p-font: 1rem;
+}
+
+
+body{
+    background-color: #9781B7;
+    color:var(--text-color);
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    top:0;
+    right:0;
+z-index:1000;
+display:flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px 8%;
+}
+.logo{
+    display:flex;
+    align-items: center;
+    color:var(--text-color);
+    font-size: 28px;
+    font-weight: bold;
+}
