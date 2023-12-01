@@ -39,3 +39,14 @@ padding: 30px 8%;
     font-size: 28px;
     font-weight: bold;
 }
+.navegação{
+    display:flex;
+}
+
+.navegação a{
+color:var(--other-color);
+font-size: var(--p-font);
+font-weight: 500;
+margin: 0 30px;
+transition: a .55s ease;
+}
