@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teka</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="produtos">
+
+        <div id="carrinho"></div>
+    </div>
+
+    <script>
+        const items = [
+            {
+                id: 0,
+                nome: 'camiseta',
+                img: 'image.jpg',
+                quantidaade: 0
+            },
+            {
+                id: 1,
+                nome: 'short',
+                img: 'image.jpg',
+                quantidaade: 0
+            },
+            {
+                id: 2,
+                nome: 'calça',
+                img: 'image.jpg',
+                quantidaade: 0
+            },
+
+        ]
+
+        inicializarLoja = () => {
+            var containerProdutos = document.getElementById('produtos');
+            items.map((val) => {
+                containerProdutos.innerHTM += `
+
+                    < div class="produto-single" >
+                    <img src="`+val.img+`" />
+                    <p>`+val.nome+`</p>
+                    <a key"`+val.id+`"href="">Adicionar ao carrinho!<a/>
+                        </div>
+                    `;
+
+                })
+                    
+             }
+             inicializarLoja();
+                    `
+            }
+        }
+    
+    inicializarLoja();
+
+    </script>
+</body>
+</html>
