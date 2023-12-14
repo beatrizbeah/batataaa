@@ -20,3 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+void botão ();{
+    print("alerta");
+    
+}
